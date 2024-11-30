@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booksky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Booksky</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="boxes">
+          <div class="box">
+            <h3>Rich Dad Poor Dad</h3>
+            <h5 class="Author">Robert</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+              minima est perspiciatis quibusdam repudiandae amet rem accusantium
+              quia eligendi. Exercitationem iure voluptatibus itaque alias autem
+              ex ratione sapiente vero. Earum aperiam quisquam quae assumenda
+              accusantium molestiae, non nostrum enim odit.
+            </p>
+            <button class="deletebook" onclick="deletebook(event)">
+              Delete
+            </button>
+          </div>
+          <div class="box">
+            <h3>Rich Dad Poor Dad</h3>
+            <h5 class="Author">Robert</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+              minima est perspiciatis quibusdam repudiandae amet rem accusantium
+              quia eligendi. Exercitationem iure voluptatibus itaque alias autem
+              ex ratione sapiente vero. Earum aperiam quisquam quae assumenda
+              accusantium molestiae, non nostrum enim odit.
+            </p>
+            <button class="deletebook" onclick="deletebook(event)">
+              Delete
+            </button>
+          </div>
+          <div class="box">
+            <h3>Rich Dad Poor Dad</h3>
+            <h5 class="Author">Robert</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <button class="deletebook" onclick="deletebook(event)">
+              Delete
+            </button>
+          </div>
+        </div>
+        <div class="add-div">
+          <button class="add">+</button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div class="overlay"></div>
+      <div class="popup">
+        <h4>Add Book</h4>
+        <form>
+          <input type="text" placeholder="Book Title" id="booktitle" />
+          <input type="text" placeholder="Book Author" id="bookauthor" />
+          <textarea placeholder="Short Description" id="description"></textarea>
+          <div class="btn-div">
+            <button class="Add">ADD</button>
+            <button class="cancel">CANCEL</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="action.js"></script>
+  </body>
+</html>
